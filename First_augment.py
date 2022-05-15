@@ -35,8 +35,8 @@ def random_augment(files,output_path,names,batch_num,lenght_sound,overlap):
 				n_mels= random.choice([128])
 
 				#cmap= random.choice(['magma'])
-				fmax= random.choice([1000])
-				fmin=50
+				fmax= random.choice([2000])
+				fmin=700
 				#n_mels= random.choice([64])
 
 				mel_spectrogram = librosa.feature.melspectrogram(y=sound,sr=sampling_rate,hop_length=16,n_mels=n_mels,fmin=fmin,fmax=fmax)
@@ -85,8 +85,8 @@ def random_augment(files,output_path,names,batch_num,lenght_sound,overlap):
 				n_mels= random.choice([128])
 
 				#cmap= random.choice(['magma'])
-				fmax= random.choice([1000])
-				fmin=50
+				fmax= random.choice([2000])
+				fmin=700
 				#n_mels= random.choice([64])
 
 				mel_spectrogram = librosa.feature.melspectrogram(y=sound,sr=sampling_rate,hop_length=16,n_mels=n_mels,fmin=fmin,fmax=fmax)
@@ -155,8 +155,8 @@ def validation_non_augment(files,output_path,names,batch_num,lenght_sound,overla
 				#n_mels= random.choice([64,128,256])
 
 				cmap= random.choice(['magma'])
-				fmax= random.choice([1000])
-				fmin=50
+				fmax= random.choice([2000])
+				fmin=700
 				n_mels= random.choice([128])
 
 				mel_spectrogram = librosa.feature.melspectrogram(y=sound,sr=sampling_rate,hop_length=16,n_mels=n_mels,fmin=fmin,fmax=fmax)

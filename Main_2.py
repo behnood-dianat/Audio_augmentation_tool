@@ -69,8 +69,8 @@ for location in range(len(inputs)):
 	negative_paths=file_func(str(total_negative))
 	positive_paths=file_func(str(total_positive))
 
-	n_train, n_val = train_test_split(negative_paths,test_size=0.2, shuffle=True)
-	p_train, p_val = train_test_split(positive_paths,test_size=0.2, shuffle=True)
+	n_train, n_val = train_test_split(negative_paths,test_size=0.17, shuffle=True)
+	p_train, p_val = train_test_split(positive_paths,test_size=0.17, shuffle=True)
 
 	n_train, n_test = train_test_split(n_train,test_size=0.1, shuffle=True)
 	p_train, p_test = train_test_split(p_train,test_size=0.1, shuffle=True)
